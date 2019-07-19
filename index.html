@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <body>
+    
+        <h1>Отправка заявки на конференцию</h1>
+        <h2> Осноные данные </h2>
+        <form action="#">
+
+                <label for="name">
+                        * Фамилия, имя, отчество:
+                    </label> <br> <br>
+                    <input type="text" size="40" required>
+                    <br> <br>
+            
+                    <label for="date">Дата рождения: </label>
+                    <br> <br>
+                    <input type="date">
+                    <br> <br>
+                    <label for="#">Пол:</label> <br> <br>
+            
+                  
+                    <input id="men_sex" type="radio" name="sex">  
+                    <label for="men_sex">Мужской</label>
+                    
+                    <input id="women_sex" type="radio" name="sex">  
+                    <label for="women_sex">Женский</label>
+            
+                    <h2> Данные для создания личного кабинета </h2>
+            
+                    <label for="e-mail">
+                        *Адрес электронной почты:
+                    </label>
+                    <br> <br>
+                    <input type="email" required>
+            
+                    <br> <br>
+            
+                    <label for="password">
+                            *Пароль для создания личного кабинета:
+                    </label>
+                        <br> <br>
+                        <input type="password" required>
+                            <br> <br>
+                        <label for="confirm_password">
+                                *Подтверждение пароля:
+                        </label>
+                            <br> <br>
+                            <input type="password" required>
+                            
+                            <h2>Материалы для конференции</h2>
+                            <p> *Тема доклада: </p> 
+                            <input type="text"> 
+
+                            <p> *Тезисы доклада (не более 1000 символов)</p>
+
+                            <textarea cols="50" rows="10">
+                                
+                            </textarea>
+н
+                            <p>  <b> Файл презетации: </b> </p>
+                            <input type="file">
+
+                            <p> <b>Дополнительные опции</b> </p>
+
+                            <input type="checkbox"> Проживание в отеле <br>
+                            <input type="checkbox"> Завтрак <br>
+                            <input type="checkbox"> Обед <br>
+                            <input type="checkbox"> Ужин <br>
+                            <hr>
+                                <input type="button" value="Отправить">
+                            <hr>
+
+                            <small> *Поля, отмеченные звездочкой, являются обязательными для заполнения</small>
+        </form>
+        
+    </body>
+
+</html>
